@@ -1,7 +1,6 @@
 package com.ideal.kotlin.usercenter.ui.activity
 
 import android.view.View
-import android.widget.Toast
 import com.ideal.kotlin.base.ui.BaseMvpActivity
 import com.ideal.kotlin.usercenter.R
 import com.ideal.kotlin.usercenter.mvp.presenter.RegistePresenter
