@@ -15,10 +15,10 @@ class RegistePresenter :BasePresenter<IRegisteView>() {
 
 
 
-    fun register(name: String?, password: String?, vertifyCode: String?) {
+    fun register(name: String?, password: String?, verifyCode: String?) {
         val userServiceImpl = UserServiceImpl()
 
-        val disposable = userServiceImpl?.register(name!!, password!!, vertifyCode!!)
+        val disposable = userServiceImpl.register(name!!, password!!, verifyCode!!)
                 .execute(object : BaseObserver<Boolean>(){
                     override fun onNext(t: Boolean) {
                         super.onNext(t)

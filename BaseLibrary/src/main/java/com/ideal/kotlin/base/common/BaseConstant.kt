@@ -6,5 +6,5 @@ package com.ideal.kotlin.base.common
  * description:
  */
 object BaseConstant {
-    const val server_address = ""
+    const val server_address = "http://120.79.59.193:8080/Kotlin_Server/"
 }

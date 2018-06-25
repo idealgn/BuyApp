@@ -12,5 +12,5 @@ interface UserService {
     /**
      * 注册
      */
-    fun register(name : String,password : String,vertifyCode : String) : Observable<Boolean>
+    fun register(name : String,password : String,verifyCode : String) : Observable<Boolean>
 }

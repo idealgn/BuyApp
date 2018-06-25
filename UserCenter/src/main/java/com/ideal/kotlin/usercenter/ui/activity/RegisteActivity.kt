@@ -5,6 +5,8 @@ import com.ideal.kotlin.base.ui.BaseMvpActivity
 import com.ideal.kotlin.usercenter.R
 import com.ideal.kotlin.usercenter.mvp.presenter.RegistePresenter
 import com.ideal.kotlin.usercenter.mvp.view.IRegisteView
+import kotlinx.android.synthetic.main.activity_registe.*
+import kotlinx.android.synthetic.main.activity_registe.view.*
 import org.jetbrains.anko.toast
 
 /**
@@ -17,6 +19,7 @@ class RegisteActivity : BaseMvpActivity<IRegisteView,RegistePresenter>() ,IRegis
 
     override fun registerResult(flag: Boolean) {
         println("success----------------------")
+        toast("success").show()
     }
 
     override fun showLoading() {
@@ -43,10 +46,10 @@ class RegisteActivity : BaseMvpActivity<IRegisteView,RegistePresenter>() ,IRegis
 
 
     fun register(view : View){
-        var name = ""
-        var password = ""
-        var vertifyCode  = ""
-        presenter.register(name,password,vertifyCode)
+        var phone = phone.text.toString()
+        var password = password.text.toString()
+        var vertifyCode  = verifyCode.text.toString()
+        presenter.register(phone,password,vertifyCode)
     }
 
 }
