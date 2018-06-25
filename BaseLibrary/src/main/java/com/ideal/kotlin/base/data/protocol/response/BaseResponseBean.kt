@@ -1,4 +1,4 @@
-package com.ideal.kotlin.base.data.protocol
+package com.ideal.kotlin.base.data.protocol.response
 
 /**
  * 日期: 2018/6/22 22:55
