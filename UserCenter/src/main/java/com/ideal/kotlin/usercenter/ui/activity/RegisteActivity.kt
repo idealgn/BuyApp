@@ -6,7 +6,6 @@ import com.ideal.kotlin.usercenter.R
 import com.ideal.kotlin.usercenter.mvp.presenter.RegistePresenter
 import com.ideal.kotlin.usercenter.mvp.view.IRegisteView
 import kotlinx.android.synthetic.main.activity_registe.*
-import kotlinx.android.synthetic.main.activity_registe.view.*
 import org.jetbrains.anko.toast
 
 /**
